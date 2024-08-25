@@ -32,7 +32,7 @@ download_sing_box() {
 
 # 下载配置文件并替换UUID、private_key和short_id
 configure_sing_box() {
-    if wget -O /root/sing-box/c.json https://github.com/az4399/sing-box-config/raw/main/reality-hk; then
+    if wget -O /root/sing-box/c.json https://github.com/az4399/sing-box/raw/main/reality-hk; then
         uuid=$(cat /proc/sys/kernel/random/uuid)
         private_key=$( /root/sing-box/sing-box generate reality-keypair | grep "PrivateKey" | cut -d ' ' -f 2)
         short_id=$( /root/sing-box/sing-box generate rand 8 --hex | tr -d '\n')
