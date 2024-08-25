@@ -1,6 +1,6 @@
 # sing-box
 
-sing-box一键安装reality脚本
+Install sing-box with one click
 
-## 一键安装
+## One-click installation script
     wget -O- https://raw.githubusercontent.com/az4399/sing-box/main/install.sh | bash
