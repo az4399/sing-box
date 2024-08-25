@@ -1,0 +1,33 @@
+{
+    "inbounds": [
+        {
+            "type": "vless",
+            "listen": "::",
+            "listen_port": 4433,
+            "users": [
+                {
+                    "uuid": "",
+                    "flow": "xtls-rprx-vision"
+                }
+            ],
+            "tls": {
+                "enabled": true,
+                "server_name": "www.hopetrip.com.hk",
+                "reality": {
+                    "enabled": true,
+                    "handshake": {
+                        "server": "www.hopetrip.com.hk",
+                        "server_port": 443
+                    },
+                    "private_key": "",
+                    "short_id": [""]
+                }
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "type": "direct"
+        }
+    ]
+}
